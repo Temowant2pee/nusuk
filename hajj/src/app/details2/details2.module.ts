@@ -12,4 +12,5 @@ import {routes} from "./routes";
     RouterModule.forChild(routes)
   ]
 })
-export class Details1Module { }
+export class Details2Module {
+}

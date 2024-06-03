@@ -1,16 +1,21 @@
 import { Component } from '@angular/core';
 import {Router, RouterOutlet} from '@angular/router';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MatBottomSheetModule, CommonModule],
+  providers: [
+    provideAnimations()  // Provide animations for standalone component
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'hajj';
 
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
 }

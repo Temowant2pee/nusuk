@@ -6,3 +6,109 @@
   color: #b08f6a;
 }
 
+@layer utilities {
+  .bg-brown-500 {
+    background-color: #caad8d;
+  }
+  .bg-brown-600 {
+    background-color: #b08f6a;
+  }
+}
+.bg-dark-gray {
+  background-color: #1f1f1f;
+}
+.bg-light-gray {
+  background-color: #e0e0e0;
+}
+.text-gold {
+  color: #d1b38e;
+}
+.border-brown {
+  border: 1px solid #a37f5d;
+}
+
+.custom-bottom-sheet .mat-bottom-sheet-container {
+  padding: 0 !important; /* Supprimer le padding par défaut */
+  //border-top-left-radius: 16px !important;
+  //border-top-right-radius: 16px !important;
+  height: 50vh !important; /* Prendre 50% de la hauteur de l'écran */
+  background-color: #1a1d22 !important; /* Couleur de fond */
+  max-width: 100% !important; /* Prendre toute la largeur de l'écran */
+  width: 100% !important; /* S'assurer que la largeur est de 100% */
+  box-shadow: none !important; /* Enlever les ombres pour éviter les contours blancs */
+  margin: 0 !important; /* Supprimer les marges */
+}
+
+
+:host {
+  display: block;
+  background-color: #1a1d22; /* Même couleur de fond que la Bottom Sheet */
+}
+//
+//.bottom-sheet-container {
+//  height: 50vh; /* Prend 50% de la hauteur de l'écran */
+//  background-color: #1a1d22; /* Couleur de fond */
+//  border-top-left-radius: 16px;
+//  border-top-right-radius: 16px;
+//  overflow: hidden;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  padding: 0;
+//  width: 100%; /* Prendre toute la largeur */
+//  box-shadow: none; /* Enlever les ombres pour éviter les contours blancs */
+//}
+//
+//.drag-handle {
+//  width: 50px;
+//  height: 5px;
+//  background-color: #5f646c; /* Couleur du trait */
+//  border-radius: 2.5px;
+//  margin: 10px 0;
+//}
+//
+//.content {
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: center;
+//  padding: 0 16px;
+//  flex: 1;
+//}
+//
+//.title {
+//  color: #ffffff;
+//  font-size: 18px;
+//  margin-bottom: 20px;
+//}
+//
+//.qr-code {
+//  width: 150px;
+//  height: 150px;
+//}
+
+.bottom-sheet-container {
+  @apply h-full bg-[#1a1d22] fixed inset-x-0 bottom-0 flex flex-col items-center justify-center;
+}
+
+.drag-handle {
+  @apply w-12 h-1.5 bg-[#5f646c] rounded-full mt-2 mb-4;
+}
+
+.content {
+  @apply flex justify-center items-center flex-col h-full;
+}
+.drag-handle {
+  width: 50px;
+  height: 5px;
+  background-color: #5f646c;
+  border-radius: 2.5px;
+  margin: 10px auto;
+}
+
+
+
+
+
+
+
