@@ -1,0 +1,137 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* ajustez cette valeur à vos besoins */
+  margin: auto;
+  border: 2px solid #1c2023;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  //top: 29px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //bottom: -27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentt {
+  position: absolute;
+  top: 20%;
+  left: 5.5%;
+  width: 89%;
+  height: 75%;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.half {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.bottom-half {
+  //background-color: rgba(200, 200, 200, 0.8); /* Couleur semi-transparente différente pour la moitié inférieure */
+}
+
+.column {
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //text-align: center;
+}
+
+.left-column {
+  width: 35%;
+}
+
+.middle-column {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.right-column {
+  width: 35%;
+}
+
+
+.text-middle {
+  flex: 1;
+  line-height: 1.2;
+  //background-color: rgba(255, 255, 255, 0.8); /* Ajustez la couleur selon vos besoins */
+}
+
+.qr-code {
+  position: absolute;
+  right: 5%; /* Ajustez selon l'emplacement souhaité */
+  top: 75%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Ajustez la couleur selon vos besoins */
+  padding: 10px;
+  width: 75px;
+  height: 75px;
+}
+
+.text-xs img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-photo {
+  width: 60px; /* Ajustez la largeur de la photo selon vos besoins */
+  height: auto; /* Maintient le ratio de l'image */
+  object-fit: cover;
+}
+
+.barcode {
+  width: 60px;
+  height: 10px; /* Réduisez la hauteur du code à barres */
+  object-fit: cover;
+  margin-top: 4px;
+}
+
+.badge {
+  display: inline-flex;
+  background-color: #D4EDDA; /* Couleur de fond verte */
+  color: #66CDAA; /* Couleur du texte vert plus clair */
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  align-items: center;
+}
+
+.tick {
+  margin-right: 5px; /* Espacement entre la coche et le texte */
+  font-size: 10px; /* Taille de la coche */
+}
+
+.icon-div {
+  //flex: 1;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+}
+
+.custom-font {
+  font-family: 'Inter', sans-serif;
+}
